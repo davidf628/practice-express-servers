@@ -1,6 +1,5 @@
-# Express-EJS Server
+# Express-EJS
 
-This server demonstrates the use of the **express** view processor known as **EJS** or (embedded Javascript). This allows the server to serve html documents that are updated with variables contained on the server before being sent to the client for rendering.
+This server is a little more advanced to demonstrate how EJS can be used to power a website. This example comes from "Express in Action" from O'Reilly Press.
 
-To install EJS use the command: `npm install ejs`
-
+This program uses the packages `morgan` and `body-parser`. **Body-Parser** can parse the body of POST requiests.
