@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Node.js Website</title>
+</head>
+<body>
+  <h1>Frontend talking to Node.js backend</h1>
+  <button id="callApiBtn">Call Backend</button>
+  <p id="response"></p>
+
+  <script>
+    document.getElementById('callApiBtn').addEventListener('click', async () => {
+      const res = await fetch('/api/hello/');
+      const data = await res.json();
+      document.getElementById('response').textContent = data.message;
+    });
+  </script>
+</body>
+</html>
