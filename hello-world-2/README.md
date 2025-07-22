@@ -6,4 +6,6 @@ After the server is started using the command `npm start`, when the client acces
 
 This document has a button that when it is clicked, the path `localhost:3000/api/hello` is called, which has a route set up on the server to send the message "Hello from Node.js backend!" to the client. When the client receives this message, the DOM is updated so that this message is displayed.
 
-Note that if the client accesses the route **/api/hello** directly, then a JSON object is delivered to the client. 
+**NOTE 1:** if the client accesses the route **/api/hello** directly, then a JSON object is delivered to the client. 
+
+**NOTE 2:** To avoide **CORS** or (Cross-Origin Resource Sharing) errors, make sure to place the **index.html** file in the **public** directory that is explicity open to the client
